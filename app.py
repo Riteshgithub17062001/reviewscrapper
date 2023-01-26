@@ -64,7 +64,7 @@ def index():
                     #custComment.encode(encoding='utf-8')
                     custComment = comtag[0].div.text
                 except Exception as e:
-                    print("Exception while creating dictionary: ",e)
+                   print("Exception while creating dictionary: ",e)
 
                 mydict = {"Product": searchString, "Name": name, "Rating": rating, "CommentHead": commentHead,
                           "Comment": custComment}
@@ -81,3 +81,4 @@ def index():
 if __name__ == "__main__":
     #app.run(host='127.0.0.1', port=8001, debug=True)
 	app.run(debug=True)
+v
